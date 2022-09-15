@@ -14,14 +14,17 @@ categoryHeadingList.map((item)=>
 (
 
 <CardView className='cardgap'>
-    <b>{item.name}</b>  <button className='btn btn-primary' >View All</button><hr></hr> <br/>
+    <div className="container1">
+    <b>{item.name}</b>  <button className='btn btn-primary' >View All</button>
+    </div>
+   <hr></hr> <br/>
  { categorySubList.map((item)=>
   (
   <>
-{/* <div className="container"> */}
-<img src={Images.tshirt} height='50' width='50'></img> 
-  {item.name}
-{/* </div> */}
+<div className="containers">
+<img src={Images.tshirt} height='150' width='150'></img> <br/>
+  <b>{item.name}</b>
+</div>
 
 
   

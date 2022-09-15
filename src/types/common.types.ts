@@ -14,3 +14,7 @@ export interface IInputProps {
     errors: any
     label: any,
 }
+export interface IModal {
+    buttonName :any
+    onmouseover : () =>any
+}
