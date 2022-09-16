@@ -6,18 +6,18 @@ import Navbar from './component/layout/Navbar';
 import CardView from './component/layout/Card';
 import DashboardView from './pages/auth/DashboardView';
 import FormDialog from './component/Modal';
-
+// import AgGridDemo from './pages/auth/AggridDemo';
+import AgGrid from './component/ag-grid/agGrid';
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
       {/* <FormDialog buttonName="Login"></FormDialog> */}
-       <CardView>
+       {/* <CardView>
         <DashboardView></DashboardView>
-      </CardView> 
+      </CardView>  */}
     
-
-
+      <AgGrid/>
       {/* <ViewCard></ViewCard> */}
     </div>
   );

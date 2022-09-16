@@ -15,6 +15,7 @@ export interface IInputProps {
     label: any,
 }
 export interface IModal {
-    buttonName :any
-    onmouseover : () =>any
+    Title : string,
+    component : any,
+    onClose: any
 }

@@ -10,10 +10,10 @@ const Login = (props: ILogin) => {
       email: props.getValues('email'),
       password: props.getValues('password')
     }
-    props.onLoginHandler(userDetails)
   }
   return (
     <>
+    <div className='container'>
       <form onSubmit={handleSubmit(onLoginHandler)}>
         <Input controller='email' label='Email' type='email' register={register} errors={errors} fields={{ required: true, minLength: 2, maxLength: 20, }} />
         {errors && <p>please enter value</p>}
@@ -21,6 +21,7 @@ const Login = (props: ILogin) => {
         {errors && <p>please enter value</p>}
         <button className='btn btn-primary'>Login</button>
       </form>
+      </div>
     </>
   )
 }

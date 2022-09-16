@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { navbarDetails } from '../../dummyData/dummyData'
 import { loginDetails } from '../../dummyData/dummyData'
+import Login from '../../component/Login';
 import FormDialog from '../Modal'
+
+
 const Navbar = () => {
 
+  const [loginModelVisibility,seLoginModelVisibility] = useState<boolean>(false);
+  const [showList,setShowList] = useState<boolean>(false);
 const loginInfo = () =>{
   alert('hi')
 //   return  <> 
@@ -20,10 +25,20 @@ const loginInfo = () =>{
 // </select>
 // </>
 }
+  const openModelHandler = ()=>
+  {
+
+    seLoginModelVisibility(true);
+  }
 
   return (
     <>
-
+   
+      {loginModelVisibility && 
+      <FormDialog 
+          Title='Login'
+          onClose={seLoginModelVisibility} 
+          component={<Login />}/>}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#"><b>Flipcart</b> <br /> <b><a>Explore plus</a></b></a>
@@ -33,19 +48,11 @@ const loginInfo = () =>{
             <input width='40px ' className="form-control me-4" type="search" placeholder="Search for  products and more" aria-label="Search" />
             {/* <button className="btn  btn-light" type="submit"><b>Login</b></button>
              */}
-    <FormDialog buttonName="Login" onmouseover={loginInfo}></FormDialog>
-            <select name='LoginDetails'>
-              {loginDetails.map((item)=>
-              (<>
-          
-                {/* <option value="Login">Login</option> */}
-              {/* <option value={item.name}>{item.name}</option> */}
-              </>
-              ))}
-
-              {/* <option className='form-control' value={item.name}><b>{item.name}</b></option> */}
-            </select>
+            
+    {/* <FormDialog buttonName="Login" onmouseover={loginInfo}></FormDialog> */}
+  
           </form>
+          <button className='btn btn-danger' onClick={openModelHandler}>Login</button>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
