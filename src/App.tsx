@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import LoginView from './pages/auth/LoginView';
 import './App.css';
 import ViewCard from './component/layout/Card';
@@ -7,8 +7,13 @@ import CardView from './component/layout/Card';
 import DashboardView from './pages/auth/DashboardView';
 import FormDialog from './component/Modal';
 // import AgGridDemo from './pages/auth/AggridDemo';
-import AgGrid from './component/ag-grid/agGrid';
+// import AgGrid from './component/ag-grid/agGrid';
+import Autocompletes from './pages/auth/Autocomplete';
+import DatePicker from 'react-date-picker'
+import GridExample from './component/ag-grid/agGrid';
 function App() {
+  // const [selectedDate, setSelectedDate] = useState(null)
+  const [value, onChange] = useState(new Date());
   return (
     <div className="App">
       <Navbar></Navbar>
@@ -16,9 +21,11 @@ function App() {
        {/* <CardView>
         <DashboardView></DashboardView>
       </CardView>  */}
-    
-      <AgGrid/>
+    {/* <Autocompletes></Autocompletes> */}
+      {/* <AgGrid/> */}
+      <GridExample/>
       {/* <ViewCard></ViewCard> */}
+      {/* <DatePicker onChange={onChange} value={value} /> */}
     </div>
   );
 }
