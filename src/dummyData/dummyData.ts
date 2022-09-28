@@ -30,14 +30,37 @@ export const categoryHeadingList = [
 
 export const categorySubList = [
 
+  { id: 1, name: 'Items1' },
+  { id: 1, name: 'Items2' },
+  { id: 2, name: 'Items3' },
+  { id: 3, name: 'Items4' },
+  { id: 4, name: 'Items5' },
+  { id: 5, name: 'Items6' },
+  { id: 6, name: 'Items7' },
+  { id: 7, name: 'Items8' }
+]
+
+export const itemOneList = [
+
   { id: 1, name: 'Item1' },
-  { id: 1, name: 'Item2' },
-  { id: 2, name: 'Item3' },
-  { id: 3, name: 'Item4' },
-  { id: 4, name: 'Item5' },
-  { id: 5, name: 'Item6' },
-  { id: 6, name: 'Item7' },
-  { id: 7, name: 'Item8' }
+  { id: 1, name: 'Item1' },
+  { id: 2, name: 'Item1' },
+  { id: 3, name: 'Item1' },
+  { id: 4, name: 'Item1' },
+  { id: 5, name: 'Item1' },
+  { id: 6, name: 'Item1' },
+  { id: 7, name: 'Item1' }
+]
+export const itemTwoList = [
+
+  { id: 1, name: 'Item1' },
+  { id: 1, name: 'Item1' },
+  { id: 2, name: 'Item1' },
+  { id: 3, name: 'Item1' },
+  { id: 4, name: 'Item1' },
+  { id: 5, name: 'Item1' },
+  { id: 6, name: 'Item1' },
+  { id: 7, name: 'Item1' }
 ]
 export function getData(): any[] {
   return [
@@ -65,5 +88,21 @@ export function getData(): any[] {
       style: 'Dirty',
       clothes: 'Padded',
     },
+  ];
+}
+
+export interface IRow {
+  value: string | number;
+  type: 'brand' | 'model' | 'price';
+}
+
+export function getDatas(): IRow[] {
+  return [
+    { value: 14, type: 'price' },
+    // { value: 'Toyota', type: 'brand' },
+    // { value: 'gg', type: 'model' },
+    { value: 21, type: 'price' },
+    // { value: 'Male', type: 'gender' },
+    // { value: 'Sad', type: 'mood' },
   ];
 }

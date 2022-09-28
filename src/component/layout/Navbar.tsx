@@ -3,7 +3,7 @@ import { navbarDetails } from '../../dummyData/dummyData'
 import { loginDetails } from '../../dummyData/dummyData'
 import Login from '../../component/Login';
 import FormDialog from '../Modal'
-
+import { Button } from 'react-bootstrap';
 
 const Navbar = () => {
 
@@ -34,11 +34,11 @@ const loginInfo = () =>{
   return (
     <>
    
-      {loginModelVisibility && 
+      {/* {loginModelVisibility && 
       <FormDialog 
           Title='Login'
           onClose={seLoginModelVisibility} 
-          component={<Login />}/>}
+          component={<Login />}/>} */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#"><b>Flipcart</b> <br /> <b><a>Explore plus</a></b></a>

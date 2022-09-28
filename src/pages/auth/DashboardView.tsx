@@ -3,12 +3,14 @@ import CardView from '../../component/layout/Card';
 import { categoryHeadingList, categorySubList } from '../../dummyData/dummyData'
 
 import Images from '../../component/constant/images';
+import IndividualIntervalsExample from '../../component/layout/Carousel';
 const DashboardView = () => {
 
     console.log(categoryHeadingList);
     
   return (
   <>
+<IndividualIntervalsExample/>
   {
 categoryHeadingList.map((item)=> 
 (
