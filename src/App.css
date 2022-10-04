@@ -1,3 +1,4 @@
+import backgroundwhite
 .App {
   text-align: center;
 }
@@ -33,9 +34,26 @@
   flex-wrap: wrap;
   justify-content:space-between
 }
-.containers{
+.container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between
+}
+.product-detail-container{
+  display :flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.product-detail-tag div{
+  display:inline
+
+}
+.productCard{
   display:inline-block;
-  margin:2px
+  margin:2px;
+  /* color:aliceblue */
+  /* background-image: url("../src/component/assets/img/backgroundwhite.jpg"); */
 }
 /* *{
   border:2px solid black

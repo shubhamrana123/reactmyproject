@@ -30,14 +30,14 @@ export const categoryHeadingList = [
 
 export const categorySubList = [
 
-  { id: 1, name: 'Items1' },
-  { id: 1, name: 'Items2' },
-  { id: 2, name: 'Items3' },
-  { id: 3, name: 'Items4' },
-  { id: 4, name: 'Items5' },
-  { id: 5, name: 'Items6' },
-  { id: 6, name: 'Items7' },
-  { id: 7, name: 'Items8' }
+  { id: 1, name: 'Items1',price:1000,rating:2.5 },
+  { id: 1, name: 'Items2',price:1000,rating:2.5 },
+  { id: 2, name: 'Items3',price:1000,rating:2.5 },
+  { id: 3, name: 'Items4',price:1000,rating:2.5 },
+  { id: 4, name: 'Items5',price:1000,rating:2.5 },
+  { id: 5, name: 'Items6',price:1000,rating:2.5 },
+  { id: 6, name: 'Items7',price:1000,rating:2.5 },
+  { id: 7, name: 'Items8',price:1000,rating:2.5 }
 ]
 
 export const itemOneList = [
@@ -106,3 +106,24 @@ export function getDatas(): IRow[] {
     // { value: 'Sad', type: 'mood' },
   ];
 }
+
+export const productPrice = [
+  { id: 1, price: 2000 },
+  { id: 2, price: 3000 },
+  { id: 3, price: 2000 },
+  { id: 4, price: 1700 },
+  { id: 5, price: 2000 },
+  { id: 6, price: 3000 },
+  { id: 7, price: 3000 },
+  { id: 8, price: 3000 },
+]
+export const  productRating = [
+  { id: 1, rating: 1 },
+  { id: 2, rating: 2 },
+  { id: 3, rating: 2.5 },
+  { id: 4, rating: 5 },
+  { id: 5, rating: 3},
+  { id: 6, rating: 1 },
+  { id: 7, rating: 3},
+  { id: 8, rating: 4.5},
+]
