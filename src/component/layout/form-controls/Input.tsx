@@ -7,7 +7,7 @@ return (
     <>
     <div className="container">
         <label>{props.label}</label> <br/>
-        <input className="form-control" type={props.type} {...props.register(props.controller)} /> <br />
+        <input className="form-control" type={props.type} placeholder={props.placeholder} {...props?.register(props.controller,{ required: fields.required, minLength: fields.minLength, maxLength: fields.maxLength })} /> <br />
     </div>
     </>
 )

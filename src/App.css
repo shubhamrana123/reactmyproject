@@ -1,5 +1,4 @@
-import backgroundwhite
-.App {
+import backgroundwhite .App {
   text-align: center;
 }
 
@@ -13,14 +12,16 @@ import backgroundwhite
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 /* .electronics{
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
 } */
-.cardgap{
+.cardgap {
   margin: 2px;
 }
+
 /* .container{
   padding:3px;
   display:flex;
@@ -28,33 +29,58 @@ import backgroundwhite
   flex-wrap: wrap;
   justify-content: flex-start;
 } */
-.container1{
-  display:flex;
+.container1 {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:space-between
+  justify-content: space-between
 }
-.container{
-  display:flex;
+
+.container {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:space-between
+  justify-content: space-between
 }
-.product-detail-container{
-  display :flex;
+
+.product-detail-container {
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.product-detail-tag div{
-  display:inline
+
+.product-detail-tag div {
+  display: inline
+}
+
+img.product-details-zoom {
+  padding: 30px;
+  transition: transform .4s;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.login-dialog{
+  display:flex;
+  flex-direction: row;
+/* justify-content: space-between; */
 
 }
-.productCard{
-  display:inline-block;
-  margin:2px;
+img.product-details-zoom:hover {
+  transform: scale(2);
+}
+.innerLeftContainer{
+
+  color:aliceblue;
+background-image: linear-gradient(to right,skyblue,blue);
+}
+.productCard {
+  display: inline-block;
+  margin: 2px;
   /* color:aliceblue */
   /* background-image: url("../src/component/assets/img/backgroundwhite.jpg"); */
 }
+
 /* *{
   border:2px solid black
 } */
@@ -68,9 +94,11 @@ import backgroundwhite
   font-size: calc(10px + 2vmin);
   color: white;
 }
-select{
-  border:0px
+
+select {
+  border: 0px
 }
+
 .App-link {
   color: #61dafb;
 }
@@ -79,6 +107,7 @@ select{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

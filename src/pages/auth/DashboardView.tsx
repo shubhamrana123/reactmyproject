@@ -1,21 +1,18 @@
 import React from 'react'
-import CardView from '../component/layout/Card';
-import { categoryHeadingList, categorySubList } from '../dummyData/dummyData'
+import CardView from '../../component/layout/Card';
+import { categoryHeadingList, categorySubList } from '../../dummyData/dummyData'
 import { useNavigate } from 'react-router-dom';
-import Images from '../component/constant/images';
-import IndividualIntervalsExample from '../component/layout/Carousel';
-import { productRating } from '../dummyData/dummyData';
-import { productPrice } from '../dummyData/dummyData';
+import Images from '../../component/constant/images';
+import IndividualIntervalsExample from '../../component/layout/Carousel';
+import { productRating } from '../../dummyData/dummyData';
+import { productPrice } from '../../dummyData/dummyData';
 const DashboardView = () => {
 const navigate = useNavigate()
     console.log(categoryHeadingList);
 
 
-    const openProductDetails = (id:any) =>{
-      // console.log(id);
-      id=+1;
-      alert('hi')
-navigate('/productDetails')
+    const openProductDetails = () =>{
+navigate('productDetails')
 
     }
     
@@ -35,7 +32,7 @@ categoryHeadingList.map((item:any)=>
  { categorySubList.map((item)=>
   (    
   <>
-<div className="productCard" onClick={(e)=>openProductDetails(item.id)}>
+<div className="productCard" onClick={openProductDetails}>
 <img src={Images.tshirt} height='150' width='150'></img> <br/>
 <div className="productCardName">
 <b>{item.name}</b>

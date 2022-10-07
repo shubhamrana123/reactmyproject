@@ -5,6 +5,8 @@ import { IUserInfo } from '../../types/user.types'
 import CardView from '../../component/layout/Card'
 const LoginView = () => {
 const {register,handleSubmit,getValues,formState:{errors}} = useForm()
+console.log(register);
+
 const onLoginHander = (userInfo:IUserInfo)=>{
 
 }

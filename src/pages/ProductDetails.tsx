@@ -9,9 +9,9 @@ const ProductDetails = () => {
 
       <div className="container">
         <CardView>
-          <img src={Images.tshirt} width={200} height={200} /> <br />
-          <button className='btn btn-primary'>ADD TO CART</button>
-          <button className='btn btn-danger'>BUY NOW</button>
+          <img src={Images.tshirt} width={200} height={200} className='product-details-zoom'/> <br />
+          <button className='form-control btn btn-primary'>ADD TO CART</button> <br />
+          <button className='form-control btn btn-danger'>BUY NOW</button>
         </CardView>
         <CardView>
           <div className="product-detail-container">

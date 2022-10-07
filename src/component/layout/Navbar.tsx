@@ -4,6 +4,7 @@ import { loginDetails } from '../../dummyData/dummyData'
 import Login from '../../component/Login';
 import FormDialog from '../Modal'
 import { Button } from 'react-bootstrap';
+import LoginView from '../../pages/auth/LoginView';
 
 const Navbar = () => {
 
@@ -34,14 +35,14 @@ const loginInfo = () =>{
   return (
     <>
    
-      {/* {loginModelVisibility && 
+      {loginModelVisibility && 
       <FormDialog 
           Title='Login'
           onClose={seLoginModelVisibility} 
-          component={<Login />}/>} */}
+          component={<Login/>}/>}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#"><b>Flipcart</b> <br /> <b><a>Explore plus</a></b></a>
+          <a className="navbar-brand" href="#"><b>Flipkart</b> <br /> <b><a>Explore plus</a></b></a>
 
       
           <form className="d-flex">
